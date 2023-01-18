@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/1273343ece.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo1.png" class="logo" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Creators</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Look forward on our<br> Capstone Journey <br>as a OMSC Information Technology Student</p>
+                <h1>Big<span>Bang!</span><br>Group</h1>
+            </div>
+        </div>
+    </div>
+    <!---about sec-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="picky1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>We are the BigBANG! group of third year<br> BSIT 3-B student of Occidental Mindoro <br>
+                        State College we created this website to show <br>
+                        our talents and skills when it comes to capstone project</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('reto')">reto</p>
+                        <p class="tab-links" onclick="opentab('veto')">veto</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>dfdfde</span><br>ferrgfr</li>
+                            <li><span>dfdfde</span><br>ferrgfr</li>
+                            <li><span>dfdfde</span><br>ferrgfr</li>     
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="reto">
+                        <ul>
+                            <li><span>dfdfdczdcxzcde</span><br>ferrcxzczczcgfr</li>
+                            <li><span>dfdczcdcfde</span><br>ferrczdczdgfr</li>
+                            <li><span>dfdfczcde</span><br>ferczczrgfr</li>     
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="veto">
+                        <ul>
+                            <li><span>dfdfde</span><br>ferrgfr</li>
+                            <li><span>dfdfde</span><br>ferrgfr</li>
+                            <li><span>dfdfde</span><br>ferrgfr</li>     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---services-->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">ABOUTe</h1>
+            <div class="services-list">  
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web design</h2>
+                    <p>dzfgscsdcgvjdhfgdhas</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>dzfgscsdcgvjdhfgdhas</p>
+                <a href="#">learn more</a>
+               </div>
+               <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>dzfgscsdcgvjdhfgdhas</p>
+                <a href="#">learn more</a>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!---portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Our Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="picky1.jpg" alt="">
+                </div>
+                <div class="work">
+                    <img src="picky1.jpg" alt="">
+                </div>
+                <div class="work">
+                    <img src="picky1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+          var tablinks = document.getElementsByClassName("tab-links");
+          var tabcontents = document.getElementsByClassName("tab-contents");
+          function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+          }
+
+    </script>
+</body>
+</html>
